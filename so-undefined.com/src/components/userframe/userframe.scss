@@ -1,0 +1,65 @@
+#user-frame {
+
+    .frame-container {
+        height: 300px;
+        min-width: 300px;
+        min-height: 300px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 22px;
+        border: 2px solid rgba(255, 255, 255, 0.15);
+
+        .background {
+            filter: blur(70px) brightness(1.5);
+            position: absolute;
+            width: 110%;
+            height: 110%;
+            margin: -60px 0 0 -50px;
+            z-index: 99;
+        }
+    }
+    .container {
+        position: relative;
+        background: #1c1c1e69;
+        z-index: 100;
+        height: 100%;
+        width: 100%;
+
+        .items {
+            z-index: 100;
+            position: relative;
+            margin-left: 20px;
+        }
+
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            border-radius: 50px;
+        }
+
+        .infos {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+
+            .username {
+                font-size: 40px;
+            }
+
+            .id {
+                font-size: 24px;
+                color: #8C8C8C;
+                line-height: .5;
+            }
+            
+            .plan {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 30px;
+            }
+
+        }
+    }
+
+}

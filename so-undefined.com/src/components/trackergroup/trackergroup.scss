@@ -1,0 +1,50 @@
+#tracker-group {
+    width: 100%;
+    margin-left: 50px;
+
+    .frame-container {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 22px;
+        border: 2px solid rgba(255, 255, 255, 0.15);
+
+        .background {
+            filter: blur(70px) brightness(1.5);
+            position: absolute;
+            width: 110%;
+            height: 110%;
+            margin: -15% 0 0 -30%;
+            z-index: 99;
+        }
+    }
+
+    .container-tg {
+        position: relative;
+        overflow: auto;
+        background: #1c1c1e69;
+        z-index: 100;
+        height: 100%;
+        width: 100%;
+
+        .items {
+            margin-left: 30px;
+        }
+
+        .title {
+            font-size: 40px;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+
+        .track-item-container {
+            display: flex;
+            margin-top: 10px;
+            height: 70%;
+            width: 94%;
+        }
+    }
+
+
+}
