@@ -1,27 +1,22 @@
-import logo from '../../logo.svg';
-import './style.scoped.scss'
-import NavBar from '../../components/navbar/navbar';
+// import logo from '../../assets/logo.svg'
+import NavBar from '../../components/navbar/NavBar'
+import TrackerGroup from '../../components/trackergroup/TrackerGroup'
+import UserFrame from '../../components/userframe/UserFrame'
+import './home.scss'
 
 function Home() {
-    return (
-        <div className="App">
-            <NavBar></NavBar>
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                Learn Reacts
-                </a>
-            </header>
+
+  return (
+    <div id="home">
+      <NavBar></NavBar>
+      <div className="body">
+        <div className="content">
+          <UserFrame></UserFrame>
+          <TrackerGroup></TrackerGroup>
         </div>
-    );
+      </div>
+    </div>
+  )
 }
 
-export default Home;
+export default Home
